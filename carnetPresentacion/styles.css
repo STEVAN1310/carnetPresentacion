@@ -1,0 +1,79 @@
+:root {
+
+    --color-principal: #FC931F;
+    --color-secundario: #000000;
+    --color-tercero: #044F58;
+    --color-cuarto: #76828E;
+    --color-quinto: #3F3A42;
+}
+
+
+body {
+    background-color: var(--color-quinto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.credencial {
+
+    position: relative;
+    width: 600px;
+    height: 350px;
+    padding: 40px;
+    border: 2px solid var(--color-secundario);
+    border-radius: 15px;
+    margin: 40px auto;
+
+    background-color: var(--color-secundario);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    box-sizing: border-box;
+    justify-content: space-between;
+   
+}
+
+p {
+    color: #FFFFFF;
+}
+
+h1 { 
+    color: var(--color-principal);
+    font-size: 24px;
+    text-align: center;
+}
+
+.credencial::before {
+    content: "ONLINE";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #FC931F;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.contenedor-foto {
+    position: relative;
+}
+
+.contenedor-foto::before {
+    content: "ONLINE";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+
+    background-color: #FC931F;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
